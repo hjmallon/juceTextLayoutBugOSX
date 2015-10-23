@@ -11,7 +11,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 
-class TestLookAndFeel : public LookAndFeel_V3
+class TestLookAndFeel : public LookAndFeel_V3, public DeletedAtShutdown
 {
 public:
     TestLookAndFeel()
