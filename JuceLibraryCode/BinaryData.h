@@ -10,7 +10,7 @@
 namespace BinaryData
 {
     extern const char*   licence_apache_2_0_txt;
-    const int            licence_apache_2_0_txtSize = 10173;
+    const int            licence_apache_2_0_txtSize = 89503;
 
     extern const char*   fonts__roboto_ttf;
     const int            fonts__roboto_ttfSize = 162876;

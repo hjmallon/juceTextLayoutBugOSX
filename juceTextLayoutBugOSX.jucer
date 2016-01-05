@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="b90biq" name="juceTextLayoutBugOSX" projectType="guiapp"
               version="1.0.0" bundleIdentifier="com.yourcompany.textEditorTeest"
-              includeBinaryInAppConfig="1" jucerVersion="3.2.0">
+              includeBinaryInAppConfig="1" jucerVersion="4.1.0">
   <MAINGROUP id="zEnMgy" name="juceTextLayoutBugOSX">
     <GROUP id="{BEFD5473-ED30-7728-AEDF-90AFD298BA92}" name="Source">
       <FILE id="HTljlF" name="MainComponent.cpp" compile="1" resource="0"

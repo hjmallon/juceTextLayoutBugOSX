@@ -21,7 +21,12 @@ public:
 
     Typeface::Ptr getTypefaceForFont (const Font& font)
     {
-        return roboto;
+        if (font.getTypefaceName() == Font::getDefaultSansSerifFontName())
+        {
+            return roboto;
+        }
+
+        return Font::getDefaultTypefaceForFont (font);
     }
 
 private:
