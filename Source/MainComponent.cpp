@@ -14,13 +14,13 @@ MainContentComponent::MainContentComponent()
     LookAndFeel::setDefaultLookAndFeel(new TestLookAndFeel());
     string = AttributedString(BinaryData::licence_apache_2_0_txt);
 
-    Font font ("Helvetica", "Regular", 10.0f);
-    //Font font (10.0f);
+    //Font font ("Helvetica", "Regular", 10.0f);
+    Font font (10.0f);
     string.setFont(font);
 
-    Time time = Time::getCurrentTime();
+    int64 time = Time::getMillisecondCounterHiRes();
     layout.createLayout(string, 600 /*400*/);
-    DBG(String("Time taken: ") << (time - Time::getCurrentTime()).getDescription());
+    DBG(String("Time taken: ") << RelativeTime((Time::getMillisecondCounterHiRes() - time) / 1000).getDescription() );
 
     setSize (layout.getWidth(), layout.getHeight());
 }
