@@ -49,8 +49,9 @@ public:
     void resized();
 
 private:
-    AttributedString string;
-    TextLayout layout;
+
+    TextLayout nativeFontLayout;
+    TextLayout bundledFontLayout;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };
